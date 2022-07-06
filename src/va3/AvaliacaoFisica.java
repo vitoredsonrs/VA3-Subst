@@ -1,6 +1,6 @@
 package va3;
 public class AvaliacaoFisica {
-    private float peso, altura;
+    private float peso, altura, imc;
 
     public AvaliacaoFisica(float peso, float altura) {
         this.peso = peso;
@@ -23,7 +23,11 @@ public class AvaliacaoFisica {
         this.altura = altura;
     }
     
-    public void imc(){
+    public void relatorioDoAluno(){
+        imc = peso /(altura * altura);
+        System.out.println("IMC: "+imc); 
+        
     }
+    
     
 }
